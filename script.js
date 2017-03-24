@@ -2,17 +2,17 @@ var arraySelect = document.getElementsByTagName('select');
 
 var element = document.getElementById('content');
 
-function dropdownStyle(){
+function itemClickEventHandler(e) {
+  
+  var style = e.target.id;
+  var value = e.currentTarget.value;
     
-    var style = this.id;
-    var value = this.value;
-    
-    element.style[style] = value;
-    
+  element.style[style] = value;
+
 }
 
-for( var i = 0; i < arraySelect.length; i++ ){
-    
-    arraySelect[i].addEventListener( 'change', dropdownStyle );
-    
+var element = document.getElementById('content');
+
+for (var i = 0; i < arraySelect.length; i++ ){ 
+    arraySelect[i].addEventListener( 'click', itemClickEventHandler ); 
 }
