@@ -14,5 +14,5 @@ function itemClickEventHandler(e) {
 var element = document.getElementById('content');
 
 for (var i = 0; i < arraySelect.length; i++ ){ 
-    arraySelect[i].addEventListener( 'click', itemClickEventHandler ); 
+    arraySelect[i].addEventListener( 'change', itemClickEventHandler ); 
 }
