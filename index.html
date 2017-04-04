@@ -3,49 +3,47 @@
     <head>
         <title>Dropdown div change</title>
         <meta charset="UTF-8"/>
+        <link href="style.css" rel="stylesheet" type="text/css">
     </head>
-    <body>
-        
-        <label>Background color:</label>
-        <select id="background">
-          <option value="Pink">Pink</option>
-          <option value="Purple">Purple</option>
-          
-        </select>
-      
-      <label>More colors:</label>
-        <select id="backgroundColor">
+    <body> 
+      <div id="filters">
+        <label>More colors:</label>
+        <select id="first" data-property="background">
           <option value="Green">Green</option>
           <option value="Black">Black</option>
         </select>
         
+        <label>Background color:</label>
+          <select id="second" data-property="background">
+            <option value="Pink">Pink</option>
+            <option value="Purple">Purple</option>
+          </select>
+  
         <label>Width:</label>
-        <select id="width">
-          <option value="100px">100px</option>
-          <option value="200px">200px</option>
-          <option value="300px">300px</option>
-        </select>
+          <select id="third" data-property="width">
+            <option value="100px">100px</option>
+            <option value="200px">200px</option>
+            <option value="300px">300px</option>
+          </select>
         
         <label>Height:</label>
-        <select id="height">
-          <option value="100px">100px</option>
-          <option value="200px">200px</option>
-          <option value="300px">300px</option>
-        </select>
+          <select id="fourth" data-property="height">
+            <option value="100px">100px</option>
+            <option value="200px">200px</option>
+            <option value="300px">300px</option>
+          </select>
       
-      <label>Border radius:</label>
-        <select id="borderRadius">
-          <option value="0px">Square</option>
-          <option value="10px">10px</option>
-          <option value="20px">20px</option>
-          <option value="30px">30px</option>
-        </select>
+        <label>Border radius:</label>
+          <select id="fifth" data-property="borderRadius">
+            <option value="0px">Square</option>
+            <option value="10px">10px</option>
+            <option value="20px">20px</option>
+            <option value="30px">30px</option>
+          </select>
+      </div>
+      <div id="content" style="background:pink; width:100px; height:100px;"></div>
         
-        <br/><br/>
-        
-        <div id="content" style="background:pink; width:100px; height:100px;"></div>
-        
-        <script src="script.js"></script>
+      <script src="script.js"></script>
         
     </body>
 </html>
